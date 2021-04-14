@@ -25,7 +25,7 @@
                 <input type="text" id="text" placeholder="Напиши чтото...">
                 <snap id="output"></snap>
                 <script type="text/python" id="script1">
-                        from browser import document
+                        from browser import document, alert
 
                         def show_text(e):
                             document['output'].textContent = e.target.value;
