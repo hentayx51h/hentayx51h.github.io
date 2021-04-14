@@ -21,9 +21,17 @@
   		</nav>
   		<a class="btn btn-outline-primary" href="login.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Войты</font></font></a>
 	</div>
-        <div class="center">
+        <div>
                 <input type="text" id="text" placeholder="Напиши чтото...">
                 <snap id="output"></snap>
+                <script type="text/python" id="script1">
+                        from browser import document
+
+                        def show_text(e):
+                            document['output'].textContent = e.target.value;
+
+                        document['text'].bind('input', show_text) 
+                </script>
         </div>
 	<footer class="container py-5">
   <div class="row">
