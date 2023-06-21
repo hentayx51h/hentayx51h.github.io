@@ -10,11 +10,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython_stdlib.js" integrity="sha256-Gnrw9tIjrsXcZSCh/wos5Jrpn0bNVNFJuNJI9d71TDs=" crossorigin="anonymous"></script>
   <style>
     .col-12{
-      position: relative;
+      /* position: relative; */
       width: 100%;
       min-height: 1px;
       padding-left: 15px;
       padding-right: 15px;
+    }
+    .container {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
     }
     .intro{
       margin-bottom: 30px;
@@ -47,10 +54,10 @@
 </head>
 <body onload="brython()">
   <!-- <div class="row"> -->
-    <div class="col-12 col-md">
+    <div class="container">
 	    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
   		  <h5 class="my-0 mr-md-auto font-weight-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Робота в Словакии </font></font></h5>
-  		  <div class="contact">
+  		  <div class="contact mr-md-auto">
           <div class="contact-phone">
             <img src="https://icongr.am/entypo/phone.svg?color=ACBF8B&size=16" alt>
             <a href="tel:+380657843605" style>
@@ -62,19 +69,21 @@
             <a href="mailto:tvoi-mail@gmail.com" style>tvoi-mail@gmail.com</a>
           </div>
         </div>
-      <!-- <nav class="my-2 my-md-0 mr-md-3"> -->
-    	<!-- <a class="p-2 text-dark" href="index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Основная </font></font></a> -->
-    	<!-- <a class="p-2 text-dark" href="natribu.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Поддержка </font></font></a> -->
-    	<!-- <a class="p-2 text-dark" href="pricing.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Цены </font></font></a> -->
-    	<!-- <a class="p-2 text-dark" href="about.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Про нас</font></font></a> -->
-  		<!-- </nav> -->
+      <nav class="my-2 my-md-0 mr-md-3">
+    	<a class="p-2 text-dark" href="index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Основная </font></font></a>
+    	<a class="p-2 text-dark" href="natribu.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Поддержка </font></font></a>
+    	<a class="p-2 text-dark" href="pricing.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Цены </font></font></a>
+    	<a class="p-2 text-dark" href="about.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Про нас</font></font></a>
+  		</nav>
   		<!-- <a class="btn btn-outline-primary" href="login.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Войты</font></font></a> -->
       </div>      
     </div>
   <!-- </div> -->
   <div>
     <div class="col-12 col-md">
-      <div class="intro">
+      <div class="container">
+        <div class="intro">
+          <p style="text-align: center;">Текст</p>
           <!-- <input type="text" id="text" placeholder="Напиши чтото..."> -->
           <snap id="output"></snap>
           <script type="text/python" id="script1">
