@@ -18,17 +18,30 @@
     }
     .intro{
       margin-bottom: 30px;
-      background: #333 url(/intro_bg.jpg) no-repeat center;
-      background-image: url(/intro_bg.jpg);
-      background-position-x: center;
-      background-position-y: center;
-      background-size: initial;
-      /* background-repeat-x: no-repeat;
-      background-repeat-y: no-repeat; */
-      background-attachment: initial;
-      background-origin: initial;
-      background-clip: initial;
-      background-color: rgb(51, 51, 51);
+      -webkit-border-radius: 7px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        border-bottom-left-radius: 7px;
+      border-radius: 7px;
+      background: #333 url("intro_bg.jpg") no-repeat center;
+        background-image: url("intro_bg.jpg");
+        background-position-x: center;
+        background-position-y: center;
+        background-size: initial;
+        background-repeat-x: no-repeat;
+        background-repeat-y: no-repeat;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: rgb(51, 51, 51);
+      background-size: cover;
+      color: #fff;
+      padding: 120px 5%;
+        padding-top: 120px;
+        padding-right: 5%;
+        padding-bottom: 120px;
+        padding-left: 5%;
     }
   </style>
 </head>
@@ -59,20 +72,21 @@
       </div>      
     </div>
   <!-- </div> -->
-        <div>
-          <div class="col-12 col-md">
-            <div class="intro">
-                <!-- <input type="text" id="text" placeholder="Напиши чтото..."> -->
-                <snap id="output"></snap>
-                <script type="text/python" id="script1">
+  <div>
+    <div class="col-12 col-md">
+      <div class="intro">
+          <!-- <input type="text" id="text" placeholder="Напиши чтото..."> -->
+          <snap id="output"></snap>
+          <script type="text/python" id="script1">
                         from browser import *
 
                         <!-- alert("Чмо тупое! Гони бабло на щот +380 *** *** ***! Я жду")  -->
-                </script>
-            </div>
-          </div>
+          </script>
         </div>
-	<footer class="container py-5">
+      </div>
+    </div>
+  </div>
+	  <footer class="container py-5">
   <div class="row">
     <div class="col-12 col-md">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
