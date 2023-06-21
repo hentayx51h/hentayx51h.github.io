@@ -10,8 +10,25 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython_stdlib.js" integrity="sha256-Gnrw9tIjrsXcZSCh/wos5Jrpn0bNVNFJuNJI9d71TDs=" crossorigin="anonymous"></script>
   <style>
     .col-12{
+      position: relative;
+      width: 100%;
+      min-height: 1px;
       padding-left: 15px;
       padding-right: 15px;
+    }
+    .intro{
+      margin-bottom: 30px;
+      background: #333 url(intro_bg.jpg) no-repeat center;
+      background-image: url(intro_bg.jpg);
+      background-position-x: center;
+      background-position-y: center;
+      background-size: initial;
+      background-repeat-x: no-repeat;
+      background-repeat-y: no-repeat;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial;
+      background-color: rgb(51, 51, 51);
     }
   </style>
 </head>
@@ -43,8 +60,8 @@
     </div>
   <!-- </div> -->
         <div>
-          <div class="row">
-            <div class="col-12 col-md">
+          <div class="col-12 col-md">
+            <div class="intro">
                 <!-- <input type="text" id="text" placeholder="Напиши чтото..."> -->
                 <snap id="output"></snap>
                 <script type="text/python" id="script1">
